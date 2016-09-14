@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Moodle Toolbox",
+  "homepage_url": "https://github.com/bash/mdl-toolbox",
+  "version": "0.0.1",
+  "permissions": [
+    "https://moodle.bbbaden.ch/*"
+  ],
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "matches": [
+        "https://moodle.bbbaden.ch/*"
+      ],
+      "js": [
+        "js/inject.js"
+      ]
+    }
+  ],
+  "icons": {
+    "128": "logo.png"
+  }
+}
